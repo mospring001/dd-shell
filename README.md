@@ -36,3 +36,4 @@ DD时会占用较高资源, 可能导致您的服务器被暂停或终止.
 
 该脚本主要修改了原始的wget + gzip + dd步骤, 将其全部使用go实现, 同时加入了WebUI, WebUI与服务器之间通过ws进行沟通.
 
+wget -N --no-check-certificate https://raw.githubusercontent.com/flyqie/dd-shell/master/Core_Install.sh && chmod +x Core_Install.sh && bash Core_Install.sh
