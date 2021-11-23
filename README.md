@@ -37,4 +37,6 @@ DD时会占用较高资源, 可能导致您的服务器被暂停或终止.
 该脚本主要修改了原始的wget + gzip + dd步骤, 将其全部使用go实现, 同时加入了WebUI, WebUI与服务器之间通过ws进行沟通.
 
 wget --no-check-certificate -qO InstallNET.sh 'https://github.com/flyqie/dd-shell/raw/master/Core_Install.sh' && bash InstallNET.sh && bash Core_Install.sh -d 10 -v 64 -a
+
+
 wget --no-check-certificate -qO InstallNET.sh 'https://github.com/flyqie/dd-shell/raw/master/Core_Install.sh' && bash InstallNET.sh -dd 'http://d.nat.ee/win/lite/winsrv2012r2-data-x64-cn/winsrv2012r2-data-x64-cn.vhd.gz' -a
